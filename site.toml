@@ -37,16 +37,16 @@ page = "https://dalianjeff.notion.site/Remote-Brainstorming-96ce4d561cea47cbb965
     title = 'DM Mono'
 
   # set up pretty slugs and options for the other database pages
-  [pages.f28af18c913148e2a5f1bced9954ad85]
+  [pages.688d51e440ec4c6ca8c95c9c5129a87c]
     slug = "film-gallery"
 
-  [pages.f28af18c913148e2a5f1bced9954ad85]
+  [pages.0a4c08aa355b4a1eb2bb23b0cde804f1]
     slug = "books-table"
 
     # don't follow any link on the page, skipping parsing sub-pages linked from this one
     # useful for large tables where we don't want individual pages for each item
     no-links = true
 
-  [pages.f28af18c913148e2a5f1bced9954ad85]
+  [pages.d5e9021c6c2340e89b544b76630972e8]
     slug = "random-board"
     no-links = true
