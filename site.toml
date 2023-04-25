@@ -8,3 +8,45 @@ name = "site"
 
 # This page should be the root of your website. It's important.
 page = "https://dalianjeff.notion.site/Remote-Brainstorming-96ce4d561cea47cbb965d920032b430a"
+
+
+
+
+
+
+## Individual Page Settings ##
+# the [pages] table defines override settings for individual pages, by defining
+# a sub-table named after the page url (or part of the url, but careful about
+# not using a string that appears in multiple page urls)
+[pages]
+  # the following settings will only apply to this page:
+  #   https://www.notion.so/d2fa06f244e64f66880bb0491f58223d
+  [pages.f28af18c913148e2a5f1bced9954ad85]
+    ## custom slugs ##
+    # inside page settings, you can change the url for that page with the 'slug' key
+    # e.g. page "/d2fa06f244e64f66880bb0491f58223d" will now map to "/games-list"
+    slug = "Price"
+
+    # change the description meta tag for this page only
+    [[pages.f28af18c913148e2a5f1bced9954ad85.meta]]
+    name = "description"
+    content = "A fullscreen list database page, now with a pretty slug"
+
+    # change the title font for this page only
+    [pages.f28af18c913148e2a5f1bced9954ad85.fonts]
+    title = 'DM Mono'
+
+  # set up pretty slugs and options for the other database pages
+  [pages.f28af18c913148e2a5f1bced9954ad85]
+    slug = "film-gallery"
+
+  [pages.f28af18c913148e2a5f1bced9954ad85]
+    slug = "books-table"
+
+    # don't follow any link on the page, skipping parsing sub-pages linked from this one
+    # useful for large tables where we don't want individual pages for each item
+    no-links = true
+
+  [pages.f28af18c913148e2a5f1bced9954ad85]
+    slug = "random-board"
+    no-links = true
